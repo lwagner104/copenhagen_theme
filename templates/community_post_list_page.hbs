@@ -66,7 +66,7 @@
       </div>
     {{/unless}}
     {{#each posts}}
-      <li>
+      <li><span>
         <div class="striped-list-item {{#if featured}}post-featured{{/if}}">
           <span class="striped-list-info">
             <a href="{{url}}" title="{{title}}" class="striped-list-title">{{title}}</a>
@@ -86,12 +86,12 @@
             </span>
 
             <ul class="meta-group">
-              <li class="meta-data">{{author.name}}</li>
+              <li class="meta-data">{{author.name}}</span></li>
               {{#if editor}}
-                <li class="meta-data">{{date edited_at timeago=true}}</li>
-                <li class="meta-data">{{t 'edited'}}</li>
+                <li class="meta-data">{{date edited_at timeago=true}}</span></li>
+                <li class="meta-data">{{t 'edited'}}</span></li>
               {{else}}
-                <li class="meta-data">{{date created_at timeago=true}}</li>
+                <li class="meta-data">{{date created_at timeago=true}}</span></li>
               {{/if}}
             </ul>
           </span>
@@ -107,7 +107,7 @@
             </span>
           </div>
         </div>
-      </li>
+      </span></li>
     {{/each}}
   </ul>
 
@@ -122,7 +122,7 @@
             <a href="{{url}}">
               {{title}}
             </a>
-          </li>
+          </span></li>
         {{/each}}
       </ul>
     </section>

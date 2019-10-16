@@ -6,6 +6,9 @@ $brand_text_color: #fff !default; //Color for text with an accent color backgrou
 $text_color: #333 !default;
 $link_color: #0072ef !default;
 $background_color: #fff !default;
+$top-bar-color: #939393 !default;
+$footer-color: #646464 !default;
+
 
 $visited-link-color: zass-darken($link_color, 20%);
 $hover-button-color: zass-darken($brand_color, 20%);

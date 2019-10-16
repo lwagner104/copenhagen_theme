@@ -32,7 +32,7 @@
         <li class="stat">
           <span class="stat-label">{{t 'total_activity'}}</span>
           <span class="stat-value">{{total_activity}}</span>
-        </li>
+        </span></li>
         <li class="stat">
           <span class="stat-label">{{t 'last_activity'}}</span>
           <span class="stat-value">
@@ -42,7 +42,7 @@
               {{t 'no_activity_yet'}}
             {{/if}}
           </span>
-        </li>
+        </span></li>
         <li class="stat">
           <span class="stat-label">{{t 'member_since'}}</span>
           <span class="stat-value">
@@ -52,26 +52,26 @@
               {{t 'no_activity_yet'}}
             {{/if}}
           </span>
-        </li>
+        </span></li>
       </ul>
     </div>
     <ul class="profile-stats profile-stats-counters">
       <li class="stat">
         <span class="stat-label">{{t 'following_users'}}</span>
         <span class="stat-value">{{t 'users_count' count=following_count}}</span>
-      </li>
+      </span></li>
       <li class="stat">
         <span class="stat-label">{{t 'followed_by'}}</span>
         <span class="stat-value">{{t 'users_count' count=follower_count}}</span>
-      </li>
+      </span></li>
       <li class="stat">
         <span class="stat-label">{{t 'votes'}}</span>
         <span class="stat-value">{{vote_count}}</span>
-      </li>
+      </span></li>
       <li class="stat">
         <span class="stat-label">{{t 'subscriptions'}}</span>
         <span class="stat-value">{{subscription_count}}</span>
-      </li>
+      </span></li>
     </ul>
   </div>
 </header>
@@ -84,9 +84,9 @@
       <ul class="collapsible-nav-list container">
         {{#each filters}}
           {{#if selected}}
-            <li aria-selected=true>{{name}}</li>
+            <li aria-selected=true>{{name}}</span></li>
           {{else}}
-            <li><a href="{{url}}">{{name}}</a></li>
+            <li><span><a href="{{url}}">{{name}}</a></span></li>
           {{/if}}
         {{/each}}
       </ul>
@@ -134,7 +134,7 @@
 
                       <ol class="breadcrumbs profile-contribution-breadcrumbs">
                         {{#each path_steps}}
-                          <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
+                          <li title="{{name}}"><a href="{{url}}">{{name}}</a></span></li>
                         {{/each}}
                       </ol>
 
@@ -144,28 +144,28 @@
                         {{#is object_type 'comment'}}
                           <li class="meta-data">
                             <a class="comment-link" href={{url}}>{{t 'view_comment'}}</a>
-                          </li>
+                          </span></li>
                         {{/is}}
-                        <li class="meta-data">{{author.name}}</li>
+                        <li class="meta-data">{{author.name}}</span></li>
                         {{#if editor}}
-                          <li class="meta-data">{{date edited_at timeago=true}}</li>
+                          <li class="meta-data">{{date edited_at timeago=true}}</span></li>
                           <li class="meta-data">
                             {{#is object_type 'article'}}
                               {{t 'updated'}}
                             {{else}}
                               {{t 'edited'}}
                             {{/is}}
-                          </li>
+                          </span></li>
                         {{else}}
-                          <li class="meta-data">{{date created_at timeago=true}}</li>
+                          <li class="meta-data">{{date created_at timeago=true}}</span></li>
                         {{/if}}
                         {{#each stats}}
-                          <li class="meta-data">{{label}}</li>
+                          <li class="meta-data">{{label}}</span></li>
                         {{/each}}
                       </ul>
                     </div>
                   {{/with}}
-                </li>
+                </span></li>
 
               {{/each}}
             </ul>
@@ -229,7 +229,7 @@
 
                   <ol class="breadcrumbs profile-contribution-breadcrumbs">
                     {{#each path_steps}}
-                      <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
+                      <li title="{{name}}"><a href="{{url}}">{{name}}</a></span></li>
                     {{/each}}
                   </ol>
 
@@ -239,26 +239,26 @@
                     {{#is object_type 'comment'}}
                       <li class="meta-data">
                         <a class="comment-link" href={{url}}>{{t 'view_comment'}}</a>
-                      </li>
+                      </span></li>
                     {{/is}}
-                    <li class="meta-data">{{author.name}}</li>
+                    <li class="meta-data">{{author.name}}</span></li>
                     {{#if editor}}
-                      <li class="meta-data">{{date edited_at timeago=true}}</li>
+                      <li class="meta-data">{{date edited_at timeago=true}}</span></li>
                       <li class="meta-data">
                         {{#is object_type 'article'}}
                           {{t 'updated'}}
                         {{else}}
                           {{t 'edited'}}
                         {{/is}}
-                      </li>
+                      </span></li>
                     {{else}}
-                      <li class="meta-data">{{date created_at timeago=true}}</li>
+                      <li class="meta-data">{{date created_at timeago=true}}</span></li>
                     {{/if}}
                     {{#each stats}}
-                      <li class="meta-data">{{label}}</li>
+                      <li class="meta-data">{{label}}</span></li>
                     {{/each}}
                   </ul>
-                </li>
+                </span></li>
 
               {{/each}}
             </ul>

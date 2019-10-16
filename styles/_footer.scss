@@ -3,16 +3,31 @@
   border-top: 1px solid $border-color;
   margin-top: 60px;
   padding: 30px 0;
+  background: $footer-color;
+  color: $brand_text_color;
+  font-size: $font-size-small;
 
-  a { color: $secondary-text-color; }
+  a { color: $brand_text_color; }
 
   &-inner {
     @include max-width-container;
-    display: flex;
+    @include tablet {display: flex;}
+    display: block;
+    text-align: center;
     justify-content: space-between;
-  }
+    max-width: 800px;
+    }
+
+    
+    
+        
+        
+    
+
+  
 
   &-language-selector {
+    width: 20%;
     color: $secondary-text-color;
     display: inline-block;
     font-weight: $font-weight-light;

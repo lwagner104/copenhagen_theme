@@ -1,8 +1,8 @@
 <nav class="my-activities-nav collapsible-nav">
   <ul class="collapsible-nav-list container">
-    <li aria-selected=true>{{t 'requests'}}</li>
-    <li>{{link 'contributions'}}</li>
-    <li>{{link 'subscriptions'}}</li>
+    <li aria-selected=true>{{t 'requests'}}</span></li>
+    <li><span>{{link 'contributions'}}</span></li>
+    <li><span>{{link 'subscriptions'}}</span></li>
   </ul>
 </nav>
 
@@ -35,7 +35,7 @@
                     </span>
 
                     <ul class="meta-group">
-                      <li class="meta-data">{{date created_at timeago=true}}</li>
+                      <li class="meta-data">{{date created_at timeago=true}}</span></li>
                     </ul>
                   </div>
                 </div>
@@ -51,13 +51,13 @@
                           <span class="attachment-meta-item meta-data">{{size}}</span>
                           <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">{{t 'download'}}</a>
                         </div>
-                      </li>
+                      </span></li>
                     {{/each}}
                   </ul>
                 {{/if}}
               </div>
             </div>
-          </li>
+          </span></li>
         {{/each}}
       </ul>
 
@@ -137,7 +137,7 @@
           <dd>
             <ul class="request-collaborators">
               {{#each collaborators}}
-                <li title="{{name}}">{{name}}</li>
+                <li title="{{name}}">{{name}}</span></li>
               {{/each}}
             </ul>
           </dd>
@@ -211,7 +211,7 @@
                     <span class="attachment-meta-item meta-data">{{size}}</span>
                     <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">{{t 'download'}}</a>
                   </div>
-                </li>
+                </span></li>
               {{/each}}
             </ul>
           </dd>

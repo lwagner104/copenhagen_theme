@@ -12,9 +12,9 @@
         <h3 class="collapsible-sidebar-title sidenav-title">{{t 'articles_in_section'}}</h3>
         <ul>
           {{#each section.articles}}
-            <li>
+            <li><span>
               <a href="{{url}}" class="sidenav-item {{#is id ../article.id}}current-article{{/is}}">{{title}}</a>
-            </li>
+            </span></li>
           {{/each}}
         </ul>
         {{#if section.more_articles}}
@@ -51,10 +51,10 @@
 
             <ul class="meta-group">
               {{#is article.created_at article.edited_at}}
-                <li class="meta-data">{{date article.created_at timeago=true}}</li>
+                <li class="meta-data">{{date article.created_at timeago=true}}</span></li>
               {{else}}
-                <li class="meta-data">{{date article.edited_at timeago=true}}</li>
-                <li class="meta-data">{{t 'updated'}}</li>
+                <li class="meta-data">{{date article.edited_at timeago=true}}</span></li>
+                <li class="meta-data">{{t 'updated'}}</span></li>
               {{/is}}
             </ul>
           </div>
@@ -78,7 +78,7 @@
                     <span class="attachment-meta-item meta-data">{{size}}</span>
                     <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">Download</a>
                   </div>
-                </li>
+                </span></li>
               {{/each}}
             </ul>
           </div>
@@ -171,10 +171,10 @@
 
                           <ul class="meta-group">
                             {{#if editor}}
-                              <li class="meta-data">{{date edited_at timeago=true}}</li>
-                              <li class="meta-data">{{t 'edited'}}</li>
+                              <li class="meta-data">{{date edited_at timeago=true}}</span></li>
+                              <li class="meta-data">{{t 'edited'}}</span></li>
                             {{else}}
-                              <li class="meta-data">{{date created_at timeago=true}}</li>
+                              <li class="meta-data">{{date created_at timeago=true}}</span></li>
                             {{/if}}
                           </ul>
                         </div>
@@ -204,7 +204,7 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </span></li>
               {{/each}}
             </ul>
 

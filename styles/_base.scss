@@ -45,6 +45,8 @@ a {
   }
 }
 
+a.top-bar-link {color: $brand_text_color; text-decoration: underline;}
+
 input,
 textarea {
   color: #000;
@@ -106,7 +108,7 @@ textarea {
 }
 
 .container-divider {
-  border-top: 1px solid $border-color;
+  border-top: 15px solid $brand_color;
   margin-bottom: 20px;
 }
 

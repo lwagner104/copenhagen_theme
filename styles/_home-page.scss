@@ -13,13 +13,21 @@
   text-align: center;
 }
 
+.hero-inner h1 {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 0px 12px #000;
+
+}
+
 /***** Promoted articles *****/
 
+section .articles {margin: 5% 8%;}
+
+
 .promoted-articles {
-  @include desktop { flex-direction: row; }
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  
+  
 
   &-item {
     @include desktop {
@@ -77,3 +85,4 @@
   border-top: 1px solid $border-color;
   padding: 30px 0;
 }
+

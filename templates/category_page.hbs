@@ -2,7 +2,7 @@
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search submit=false}}
+    {{search instant=true submit=false}}
   </nav>
 
   <div class="category-container">
@@ -31,7 +31,7 @@
                     {{#if internal}}
                       <span class="icon-lock" title="{{t 'internal'}}"></span>
                     {{/if}}
-                  </li>
+                  </span></li>
                 {{/each}}
               </ul>
               {{#if more_articles}}

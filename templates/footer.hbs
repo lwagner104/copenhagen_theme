@@ -1,9 +1,14 @@
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
+    <div class="back-to-home">{{#link 'help_center'}}<p>{{help_center.name}}</p>{{/link}}</div>
+    <div class=""><a href="https://www.campingwagner.de/shop_content.php/coID/25/content/Unsere-AGB"><p>AGB</p></a></div>
+    <div class=""><a href="https://www.campingwagner.de/shop_content.php/coID/2/content/Privatsphaere-und-Datenschutz"><p>Privatsphäre und Datenschutz</p></a></div>
+    <div class=""><a href="https://www.campingwagner.de/shop_content.php/coID/31/content/Widerrufsrecht"><p>Widerrufsrecht</p></a></div>
+    <div class=""><a href="https://www.campingwagner.de/shop_content.php/coID/4/content/Impressum"></a><p>Impressum</p></a></div>
+
+    {{#if alternative_locales}}
+      <div class="footer-language-selector">
         <div class="dropdown language-selector">
           <button class="dropdown-toggle" aria-haspopup="true">
             {{current_locale.name}}
@@ -16,7 +21,7 @@
             {{/each}}
           </span>
         </div>
-      {{/if}}
-    </div>
+      </div>
+    {{/if}}
   </div>
 </footer>

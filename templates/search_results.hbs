@@ -24,26 +24,26 @@
                 <span class="search-result-votes meta-count">{{vote_sum}}</span>
               {{/if}}
               <ul class="meta-group">
-                <li>
+                <li><span>
                   <ol class="breadcrumbs search-result-breadcrumbs">
                     {{#each path_steps}}
                       {{#is url '#'}}
-                        <li title="{{name}}">{{name}}</li>
+                        <li title="{{name}}">{{name}}</span></li>
                       {{else}}
-                        <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
+                        <li title="{{name}}"><a href="{{url}}">{{name}}</a></span></li>
                       {{/is}}
                     {{/each}}
                   </ol>
-                </li>
+                </span></li>
                 <li class="meta-data">
                   {{#link 'user_profile' id=author.id}}
                     {{author.name}}
                   {{/link}}
-                </li>
-                <li class="meta-data">{{date created_at timeago=true}}</li>
+                </span></li>
+                <li class="meta-data">{{date created_at timeago=true}}</span></li>
               </ul>
               <div class="search-result-description">{{text}}</div>
-            </li>
+            </span></li>
           {{/each}}
         </ul>
       {{else}}
@@ -70,24 +70,24 @@
                   {{comment_count}}
                 </span>
                 <ul class="meta-group">
-                  <li>
+                  <li><span>
                     <ol class="breadcrumbs search-result-breadcrumbs">
                       {{#each path_steps}}
-                        <li title="{{name}}"><a href="{{url}}">{{name}}</a></li>
+                        <li title="{{name}}"><a href="{{url}}">{{name}}</a></span></li>
                       {{/each}}
                     </ol>
-                  </li>
+                  </span></li>
                   <li class="meta-data">
                     {{#link 'user_profile' id=author.id}}
                       {{author.name}}
                     {{/link}}
-                  </li>
-                  <li class="meta-data">{{date created_at timeago=true}}</li>
+                  </span></li>
+                  <li class="meta-data">{{date created_at timeago=true}}</span></li>
                 </ul>
                 <div class="search-result-description">
                   {{text}}
                 </div>
-              </li>
+              </span></li>
             {{/each}}
           </ul>
         {{else}}

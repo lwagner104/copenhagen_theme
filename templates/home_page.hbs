@@ -1,6 +1,7 @@
 <section class="section hero">
-  <div class="hero-inner">
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+  <div class="hero-inner"> 
+    <h1>Du hast eine Frage an uns? <br> Wir helfen dir gerne weiter...</h1>
+    {{search instant=true submit=false instant=settings.instant_search placeholder='Suche nach Antworten' class='search search-full'}}
   </div>
 </section>
 
@@ -15,7 +16,7 @@
                 <h4 class="blocks-item-title">{{name}}</h4>
                 <p class="blocks-item-description">{{excerpt description}}</p>
               </a>
-            </li>
+            </span></li>
           {{else}}
             {{#each sections}}
               <li class="blocks-item">
@@ -25,7 +26,7 @@
                   </h4>
                   <p class="blocks-item-description">{{excerpt description}}</p>
                 </a>
-              </li>
+              </span></li>
             {{/each}}
           {{/if}}
         {{/each}}
@@ -35,7 +36,7 @@
 
     {{#if promoted_articles}}
       <section class="articles">
-        <h3>{{t 'promoted_articles'}}</h3>
+        <h3>Oft gestellte Fragen</h3>
         <ul class="article-list promoted-articles">
           {{#each promoted_articles}}
             <li class="promoted-articles-item">
@@ -46,7 +47,7 @@
                     <span class="icon-lock" title="{{t 'internal'}}"></span>
                   {{/if}}
                 </a>
-            </li>
+            </span></li>
           {{/each}}
         </ul>
       </section>
@@ -69,4 +70,8 @@
       {{recent_activity}}
     {{/if}}
   </section>
+
+
+
+
 </div>

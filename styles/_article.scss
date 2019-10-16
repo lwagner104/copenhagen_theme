@@ -46,6 +46,8 @@
     margin-bottom: 10px;
   }
 
+ 
+
   &-title {
     @include tablet {
       flex-basis: 100%; /* Take entire row */
@@ -71,8 +73,8 @@
   }
 
   &-meta {
-    display: inline-block;
-    vertical-align: middle;
+    display: none;
+    
   }
 
   &-body {

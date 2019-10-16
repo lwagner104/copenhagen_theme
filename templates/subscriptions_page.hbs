@@ -1,10 +1,10 @@
 <nav class="my-activities-nav collapsible-nav">
   <ul class="collapsible-nav-list container">
     {{#if help_center.request_management_enabled}}
-      <li>{{link 'requests'}}</li>
+      <li><span>{{link 'requests'}}</span></li>
     {{/if}}
-    <li>{{link 'contributions'}}</li>
-    <li aria-selected=true>{{t 'following'}}</li>
+    <li><span>{{link 'contributions'}}</span></li>
+    <li aria-selected=true>{{t 'following'}}</span></li>
   </ul>
 </nav>
 
