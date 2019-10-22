@@ -452,7 +452,7 @@ div .logo {
 }
 
 .logo img {
-  max-height: 50px;
+  max-height: 70px;
 }
 
 .user-nav {
@@ -586,6 +586,7 @@ div .logo {
 }
 
 .top-bar .top-bar-left a::before {
+  transform: rotate(180deg);
   content: "";
   width: 20px;
   height: 20px;
@@ -1025,9 +1026,9 @@ section .articles {
   .promoted-articles-item {
     align-self: flex-end;
     flex: 0 0 auto;
-    padding-right: 30px;
-    width: 33%;
-    /* Three columns on desktop */
+    /*
+      padding-right: 30px;
+      width: 33%;  Three columns on desktop */
   }
   [dir="rtl"] .promoted-articles-item {
     padding: 0 0 0 30px;
@@ -1180,7 +1181,7 @@ section .articles {
 
 @media (min-width: 1024px) {
   .category-content {
-    flex: 0 0 80%;
+    /*flex: 0 0 100%;*/
   }
 }
 
@@ -1252,7 +1253,7 @@ section .articles {
 
 @media (min-width: 1024px) {
   .section-content {
-    flex: 0 0 80%;
+    /*flex: 0 0 80%;*/
   }
 }
 

@@ -80,12 +80,14 @@
   &-body {
     @include content-body;
     > p:last-child { margin-bottom: 0; }
-  }
+  
+  } 
 
   &-content {
     line-height: 1.6;
     margin: 40px 0;
     word-wrap: break-word;
+
   }
 
   &-footer {

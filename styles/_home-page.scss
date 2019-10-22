@@ -33,8 +33,9 @@ section .articles {margin: 5% 8%;}
     @include desktop {
       align-self: flex-end;
       flex: 0 0 auto;
+      /*
       padding-right: 30px;
-      width: 33%; /* Three columns on desktop */
+      width: 33%;  Three columns on desktop */
 
       [dir="rtl"] & { padding: 0 0 0 30px; }
     }
