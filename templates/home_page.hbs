@@ -5,34 +5,27 @@
   </div>
 </section>
 
-<div class="container">
-  <section class="section knowledge-base">
-    <section class="categories blocks">
-      <ul class="blocks-list">
-        {{#each categories}}
-          {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <h4 class="blocks-item-title">{{name}}</h4>
-                <p class="blocks-item-description">{{excerpt description}}</p>
-              </a>
-            </span></li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <h4 class="blocks-item-title">
-                    {{name}}
-                  </h4>
-                  <p class="blocks-item-description">{{excerpt description}}</p>
-                </a>
-              </span></li>
-            {{/each}}
-          {{/if}}
-        {{/each}}
-      </ul>
-      {{pagination}}
-    </section>
+ <div class="container">
+    <section class="section knowledge-base">
+      <section class="categories blocks">
+        <ul class="blocks-list">
+         {{#each categories}}
+            {{#is id 360002161839}}
+              {{#each sections}}
+                <li class="blocks-item">
+                  <a href='{{url}}' class="blocks-item-link">
+                    <h4 class="blocks-item-title">
+                      {{name}}
+                    </h4>
+                    <p class="blocks-item-description">{{excerpt description}}</p>
+                  </a>
+               </li>
+              {{/each}}
+              {{/is}}
+          {{/each}}
+        </ul>
+        {{pagination}}
+      </section>
 
     {{#if promoted_articles}}
       <section class="articles">
