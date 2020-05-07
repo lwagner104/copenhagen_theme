@@ -5,29 +5,24 @@
       {{search submit=false}}
    </nav>
    <h1>Kontaktieren Sie uns</h1>
-   <div class="container">
-      <section class="section knowledge-base">
-         <section class="categories blocks">
+   <section class="section knowledge-base">
+      <section class="categories blocks">
+         <div class="promoted-articles">
+            <h3>Empfohlene Artikel</h3>
             <ul class="blocks-list">
-               {{#if promoted_articles}}
-               <ul class="article-list promoted-articles">
-                  {{#each promoted_articles}}
-                  <li class="blocks-item">
-                     <a href='{{url}}' class="blocks-item-link">
-                     {{title}}
-                     {{#if internal}}
-                     <span class="icon-lock" title="{{t 'internal'}}"></span>
-                     {{/if}}
-                     </a>
-                     >
-                  </li>
-                  {{/each}}
-               </ul>
-               {{/if}}
+               {{#each promoted_articles}}
+               <li class="blocks-item">
+                  <a href='{{url}}' class="blocks-item-link">
+                     <h4 class="blocks-item-title">
+                        {{title}}
+                     </h4>
+                  </a>
+               </li>
+               {{/each}}
             </ul>
-         </section>
+         </div>
       </section>
-   </div>
+   </section>
    <h2>
       {{t 'submit_a_request'}}
       {{#if follow_up}}
