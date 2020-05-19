@@ -1,20 +1,81 @@
 <div class="container-divider"></div>
 <div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search submit=false}}
-  </nav>
-
-  <h1>
-    {{t 'submit_a_request'}}
-    {{#if follow_up}}
+   <nav class="sub-nav">
+      {{breadcrumbs}}
+      {{search submit=false}}
+   </nav>
+   <h1>Kontaktieren Sie uns</h1>
+   <section class="section knowledge-base">
+      <section class="categories blocks">
+         <div class="promoted-articles-block">
+            <h2>Empfohlene Artikel</h2>
+            <ul class="blocks-list">
+               {{#each promoted_articles}}
+               <li class="blocks-item">
+                  <a href='{{url}}' class="blocks-item-link">
+                     <h4 class="blocks-item-title">
+                        {{title}}
+                     </h4>
+                  </a>
+               </li>
+               {{/each}}
+            </ul>
+         </div>
+         <div class="request-block">
+            <h2>Wie können wir helfen?</h2>
+            <ul class="blocks-list">
+               <li class="blocks-item-request border-right ">
+                  <img class="" src="{{asset 'icon-email.svg'}}" />
+                  <h4>Schreiben Sie uns eine Nachricht</h4>
+                  <p>Jemand aus unserem Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen.</p>
+                  <div class="nav-wrapper">
+                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
+                     <nav class="user-nav" id="user-nav">
+                        <!-- <a class="submit-a-request" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+                        <a class="submit-a-request-green" href="/hc/de/requests/new/#request-form">Nachricht schreiben</a>
+                     </nav>
+                  </div>
+               </li>
+               <li class="blocks-item-request border-right ">
+                  <img class="" src="{{asset 'icon-search.svg'}}" />
+                  <h4>Hilfe-Center durchsuchen</h4>
+                  <p>Holen Sie sich sofort Hilfe und finden Sie schnell Antworten auf die häufigsten Fragen.</p>
+                    <div class="nav-wrapper">
+                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
+                     <nav class="user-nav" id="user-nav">
+                        <!-- <a class="submit-a-request" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+                        <a class="submit-a-request-green" href="/hc/de">Hilfe-Center durchsuchen</a>
+                     </nav>
+                  </div>
+               </li>
+               <li class="blocks-item-request">
+                  <img class="" src="{{asset 'icon-chat.svg'}}" />
+                  <h4>Chatten Sie Live mit uns</h4>
+                  <p>Sprechen Sie im Live-Chat direkt mit einem unsere Mitarbeiter.</p>
+                    <div class="nav-wrapper">
+                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
+                     <nav class="user-nav" id="user-nav">
+                        <!-- <a class="submit-a-request-green" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+      
+                       <a class="submit-a-request-green" href="javascript:$zopim.livechat.window.show()">Chat starten</a>
+                     </nav>
+                  </div>
+               </li>
+            </ul>
+           <a href="/hc/de/articles/360010228919-Kontakt">Weitere Kontaktmöglichkeiten</a>
+         </div>
+      </section>
+   </section>
+  
+   <h2>
+      {{t 'submit_a_request'}}
+      {{#if follow_up}}
       <span class="follow-up-hint">
-        {{follow_up}}
+      {{follow_up}}
       </span>
-    {{/if}}
-  </h1>
-
-  <div class="form">
-    {{request_form}}
-  </div>
+      {{/if}}
+   </h2>
+   <div id="request-form" class="form">
+      {{request_form}}
+   </div>
 </div>

@@ -1,6 +1,6 @@
 <section class="section hero">
   <div class="hero-inner"> 
-    <h1>Du hast eine Frage an uns? <br> Wir helfen dir gerne weiter...</h1>
+    <h1>Sie habe eine Frage an uns? <br> Wir helfen Ihnen gerne weiter...</h1>
     {{search instant=true submit=false instant=settings.instant_search placeholder='Suche nach Antworten' class='search search-full'}}
   </div>
 </section>
@@ -10,7 +10,7 @@
       <section class="categories blocks">
         <ul class="blocks-list">
          {{#each categories}}
-            {{#is id 360002161839}}
+            {{#is id 360002206139}}
               {{#each sections}}
                 <li class="blocks-item">
                   <a href='{{url}}' class="blocks-item-link">
@@ -40,11 +40,26 @@
                     <span class="icon-lock" title="{{t 'internal'}}"></span>
                   {{/if}}
                 </a>
-            </span></li>
+           </li>
           {{/each}}
         </ul>
       </section>
     {{/if}}
+  </section>
+    <section class="section request">
+    <div class="nav-wrapper">
+      <nav class="user-nav" id="user-nav">
+
+      <h2>Brauchen Sie weitere Hilfe?</h2>
+       <a class="submit-a-request-green" href="/hc/de/requests/new/#request-form">Nachricht schreiben</a>
+
+      </nav>
+    </div>
+   
+  
+
+
+
   </section>
 
   {{#if help_center.community_enabled}}
@@ -57,6 +72,7 @@
       <div class="community-image"></div>
     </section>
   {{/if}}
+
 
   <section class="section activity">
     {{#if settings.show_recent_activity}}

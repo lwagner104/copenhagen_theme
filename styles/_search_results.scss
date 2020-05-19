@@ -11,7 +11,7 @@
 
   &-column {
     @include desktop {
-      flex: 0 0 45%;
+      flex: 0 0 90%;
     }
 
     flex: 1;
@@ -80,11 +80,7 @@
   &-breadcrumbs {
     margin: 0;
 
-    li:last-child::after {
-       content: "·";
-       display: inline-block;
-       margin: 0 5px;
-    }
+
   }
 }
 
