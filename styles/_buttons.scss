@@ -115,22 +115,25 @@
 }
 
 
-/*Styling submit-a-request Button green*/
+/*Styling submit-a-request Button filled*/
 
-@media (min-width: 768px) {
 
-.nav-wrapper .user-nav a.submit-a-request-green {
-background-color: $brand_color;
-border: 0;
-border-radius: 4px;
-color: white;
-font-size: 14px;
-font-weight: 400;
-line-height: 2.72;
-min-width: 203px;
-padding: 0 1.9286em;
-text-decoration: none;
-text-align: center;
+
+ a.submit-a-request-filled {
+  background-color: $brand_color;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.72;
+  max-width: 212px;
+  min-width: 212px;
+  text-decoration: none;
+  text-align: center;
+  margin: 2em 4em;
+
+  
 
 &:hover,
 &:active,
@@ -140,4 +143,31 @@ text-align: center;
 
 }
 
+/*Styling submit-a-request Button filled home*/
+
+
+
+a.submit-a-request-help {
+  background-color: $brand_color;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.72;
+  max-width: 212px;
+  min-width: 212px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em 2em;
+
+
+
+&:hover,
+&:active,
+&:focus {
+  background-color: $hover-button-color;
 }
+
+}
+

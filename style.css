@@ -275,24 +275,44 @@ ul {
   }
 }
 
-/*Styling submit-a-request Button green*/
-@media (min-width: 768px) {
-  .nav-wrapper .user-nav a.submit-a-request-green {
-    background-color: $brand_color;
-    border: 0;
-    border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 2.72;
-    min-width: 203px;
-    padding: 0 1.9286em;
-    text-decoration: none;
-    text-align: center;
-  }
-  .nav-wrapper .user-nav a.submit-a-request-green:hover, .nav-wrapper .user-nav a.submit-a-request-green:active, .nav-wrapper .user-nav a.submit-a-request-green:focus {
-    background-color: darken($brand_color, 20%);
-  }
+/*Styling submit-a-request Button filled*/
+a.submit-a-request-filled {
+  background-color: $brand_color;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.72;
+  max-width: 212px;
+  min-width: 212px;
+  text-decoration: none;
+  text-align: center;
+  margin: 2em 4em;
+}
+
+a.submit-a-request-filled:hover, a.submit-a-request-filled:active, a.submit-a-request-filled:focus {
+  background-color: darken($brand_color, 20%);
+}
+
+/*Styling submit-a-request Button filled home*/
+a.submit-a-request-help {
+  background-color: $brand_color;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.72;
+  max-width: 212px;
+  min-width: 212px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em 2em;
+}
+
+a.submit-a-request-help:hover, a.submit-a-request-help:active, a.submit-a-request-help:focus {
+  background-color: darken($brand_color, 20%);
 }
 
 /***** Tables *****/
@@ -978,6 +998,7 @@ div .logo {
   justify-content: center;
   max-width: 100%;
   text-align: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -1096,8 +1117,8 @@ section .articles {
   .promoted-articles-item {
     align-self: flex-end;
     flex: 0 0 auto;
-    /*
-      padding-right: 30px;
+    /*
+      padding-right: 30px;
       width: 33%;  Three columns on desktop */
   }
   [dir="rtl"] .promoted-articles-item {
@@ -1329,8 +1350,10 @@ section .articles {
   font-size: 18px;
 }
 
-.border-right {
-  border-right: 1px solid #646464;
+@media (min-width: 768px) {
+  .border-right {
+    border-right: 1px solid #646464;
+  }
 }
 
 /***** Section pages *****/
@@ -1391,10 +1414,10 @@ section .articles {
 
 /***** Article *****/
 .article {
-  /*
-  * The article grid is defined this way to optimize readability:
-  * Sidebar | Content | Free space
-  * 17%     | 66%     | 17%
+  /*
+  * The article grid is defined this way to optimize readability:
+  * Sidebar | Content | Free space
+  * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
 }
@@ -2477,10 +2500,10 @@ section .articles {
 }
 
 /***** Post *****/
-/*
-* The post grid is defined this way:
-* Content | Sidebar
-* 70%     | 30%
+/*
+* The post grid is defined this way:
+* Content | Sidebar
+* 70%     | 30%
 */
 .post {
   flex: 1;
@@ -4294,148 +4317,4 @@ html[lang|="ja"] .search-result-description em,
 html[lang|="ru"] .search-result-description em,
 html[lang|="th"] .search-result-description em {
   font-style: bold;
-}
-
-/* Notification Boxes nach Twitter Bootstrap */
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.alert-heading {
-  color: inherit;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.alert-link {
-  font-weight: 700;
-}
-
-.alert-dismissible {
-  padding-right: 4rem;
-}
-
-.alert-dismissible .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.75rem 1.25rem;
-  color: inherit;
-}
-
-.alert-primary {
-  color: #004085;
-  background-color: #cce5ff;
-  border-color: #b8daff;
-}
-
-.alert-primary hr {
-  border-top-color: #9fcdff;
-}
-
-.alert-primary .alert-link {
-  color: #002752;
-}
-
-.alert-secondary {
-  color: #383d41;
-  background-color: #e2e3e5;
-  border-color: #d6d8db;
-}
-
-.alert-secondary hr {
-  border-top-color: #c8cbcf;
-}
-
-.alert-secondary .alert-link {
-  color: #202326;
-}
-
-.alert-success {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-}
-
-.alert-success hr {
-  border-top-color: #b1dfbb;
-}
-
-.alert-success .alert-link {
-  color: #0b2e13;
-}
-
-.alert-info {
-  color: #0c5460;
-  background-color: #d1ecf1;
-  border-color: #bee5eb;
-}
-
-.alert-info hr {
-  border-top-color: #abdde5;
-}
-
-.alert-info .alert-link {
-  color: #062c33;
-}
-
-.alert-warning {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba;
-}
-
-.alert-warning hr {
-  border-top-color: #ffe8a1;
-}
-
-.alert-warning .alert-link {
-  color: #533f03;
-}
-
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
-
-.alert-danger hr {
-  border-top-color: #f1b0b7;
-}
-
-.alert-danger .alert-link {
-  color: #491217;
-}
-
-.alert-light {
-  color: #818182;
-  background-color: #fefefe;
-  border-color: #fdfdfe;
-}
-
-.alert-light hr {
-  border-top-color: #ececf6;
-}
-
-.alert-light .alert-link {
-  color: #686868;
-}
-
-.alert-dark {
-  color: #1b1e21;
-  background-color: #d6d8d9;
-  border-color: #c6c8ca;
-}
-
-.alert-dark hr {
-  border-top-color: #b9bbbe;
-}
-
-.alert-dark .alert-link {
-  color: #040505;
 }

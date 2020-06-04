@@ -58,4 +58,5 @@
 }
 
 
-.border-right {border-right: 1px solid #646464;}
+@media (min-width: 768px) {
+.border-right {border-right: 1px solid #646464;}}

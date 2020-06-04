@@ -28,45 +28,29 @@
                   <img class="" src="{{asset 'icon-email.svg'}}" />
                   <h4>Schreiben Sie uns eine Nachricht</h4>
                   <p>Jemand aus unserem Team wird sich so schnell wie möglich mit Ihnen in Verbindung setzen.</p>
-                  <div class="nav-wrapper">
-                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
-                     <nav class="user-nav" id="user-nav">
-                        <!-- <a class="submit-a-request" href="/hc/de/requests/new">Anfrage einreichen</a> -->
-                        <a class="submit-a-request-green" href="/hc/de/requests/new/#request-form">Nachricht schreiben</a>
-                     </nav>
-                  </div>
+                  <!-- <a class="submit-a-request" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+                  <a class="submit-a-request-filled" href="/hc/de/requests/new/#request-form">Nachricht schreiben</a>
                </li>
                <li class="blocks-item-request border-right ">
                   <img class="" src="{{asset 'icon-search.svg'}}" />
                   <h4>Hilfe-Center durchsuchen</h4>
                   <p>Holen Sie sich sofort Hilfe und finden Sie schnell Antworten auf die häufigsten Fragen.</p>
-                    <div class="nav-wrapper">
-                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
-                     <nav class="user-nav" id="user-nav">
-                        <!-- <a class="submit-a-request" href="/hc/de/requests/new">Anfrage einreichen</a> -->
-                        <a class="submit-a-request-green" href="/hc/de">Hilfe-Center durchsuchen</a>
-                     </nav>
-                  </div>
+                  <!-- <a class="submit-a-request-filled" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+                  <a class="submit-a-request-filled" href="/hc/de">Hilfe-Center durchsuchen</a>
                </li>
                <li class="blocks-item-request">
                   <img class="" src="{{asset 'icon-chat.svg'}}" />
                   <h4>Chatten Sie Live mit uns</h4>
-                  <p>Sprechen Sie im Live-Chat direkt mit einem unsere Mitarbeiter.</p>
-                    <div class="nav-wrapper">
-                     <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="Navigationsmenü öffnen/schließen"></span>
-                     <nav class="user-nav" id="user-nav">
-                        <!-- <a class="submit-a-request-green" href="/hc/de/requests/new">Anfrage einreichen</a> -->
-      
-                       <a class="submit-a-request-green" href="javascript:$zopim.livechat.window.show()">Chat starten</a>
-                     </nav>
-                  </div>
+                  <p>Sprechen Sie im Live-Chat direkt mit einem unserer Mitarbeiter.</p>
+                  <!-- <a class="submit-a-request-green" href="/hc/de/requests/new">Anfrage einreichen</a> -->
+                  <a class="submit-a-request-filled" href="javascript:$zopim.livechat.window.show()">Chat starten</a>
                </li>
             </ul>
-           <a href="/hc/de/articles/360010228919-Kontakt">Weitere Kontaktmöglichkeiten</a>
+            <a href="/hc/de/articles/360010115660-Kontakt">Weitere Kontaktmöglichkeiten</a>
+            
          </div>
       </section>
    </section>
-  
    <h2>
       {{t 'submit_a_request'}}
       {{#if follow_up}}
