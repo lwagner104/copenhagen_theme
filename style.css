@@ -335,8 +335,7 @@ a.submit-a-request-help:hover, a.submit-a-request-help:active, a.submit-a-reques
   text-align: left;
 }
 
-[dir="rtl"] .table th, [dir="rtl"]
-.table th a {
+[dir="rtl"] .table th, [dir="rtl"] .table th a {
   text-align: right;
 }
 
@@ -999,6 +998,7 @@ div .logo {
   max-width: 100%;
   text-align: center;
   align-items: center;
+  padding-right: 1em;
 }
 
 @media (min-width: 768px) {
@@ -1117,8 +1117,8 @@ section .articles {
   .promoted-articles-item {
     align-self: flex-end;
     flex: 0 0 auto;
-    /*
-      padding-right: 30px;
+    /*
+      padding-right: 30px;
       width: 33%;  Three columns on desktop */
   }
   [dir="rtl"] .promoted-articles-item {
@@ -1414,10 +1414,10 @@ section .articles {
 
 /***** Article *****/
 .article {
-  /*
-  * The article grid is defined this way to optimize readability:
-  * Sidebar | Content | Free space
-  * 17%     | 66%     | 17%
+  /*
+  * The article grid is defined this way to optimize readability:
+  * Sidebar | Content | Free space
+  * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
 }
@@ -2500,10 +2500,10 @@ section .articles {
 }
 
 /***** Post *****/
-/*
-* The post grid is defined this way:
-* Content | Sidebar
-* 70%     | 30%
+/*
+* The post grid is defined this way:
+* Content | Sidebar
+* 70%     | 30%
 */
 .post {
   flex: 1;
@@ -2956,7 +2956,7 @@ section .articles {
 
 @media (min-width: 1024px) {
   .my-activities-table th:first-child,
-  .my-activities-table td:first-child {
+.my-activities-table td:first-child {
     width: 500px;
   }
 }
@@ -3055,11 +3055,10 @@ section .articles {
 
 @media (min-width: 768px) {
   .requests-table-toolbar .organization-subscribe,
-  .requests-table-toolbar .organization-unsubscribe {
+.requests-table-toolbar .organization-unsubscribe {
     margin-left: 10px;
   }
-  [dir="rtl"] .requests-table-toolbar .organization-subscribe, [dir="rtl"]
-  .requests-table-toolbar .organization-unsubscribe {
+  [dir="rtl"] .requests-table-toolbar .organization-subscribe, [dir="rtl"] .requests-table-toolbar .organization-unsubscribe {
     margin: 0 10px 0 0;
   }
 }
@@ -3497,6 +3496,8 @@ section .articles {
 [class^="icon-"]::before,
 [class*=" icon-"]::before,
 .icon,
+.search-result-votes::before,
+.search-result-meta-count::before,
 .search::before,
 .recent-activity-item-comment span::before,
 .article-vote::before,
@@ -3506,9 +3507,7 @@ section .articles {
 .vote-down::before,
 .actions .dropdown-toggle::before,
 .collapsible-nav-list li[aria-selected="true"]::after,
-.collapsible-sidebar-title::after,
-.search-result-votes::before,
-.search-result-meta-count::before {
+.collapsible-sidebar-title::after {
   font-family: "copenhagen-icons";
   font-style: normal;
   font-weight: normal;
